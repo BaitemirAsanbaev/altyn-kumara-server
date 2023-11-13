@@ -8,9 +8,9 @@ const DishSchema = new Schema({
     type: String,
     required: true,
   },
-  author: {
+  category: {
     type: Schema.Types.ObjectId,
-    ref: "User",
+    ref: "Category",
     required: true
   },
 });

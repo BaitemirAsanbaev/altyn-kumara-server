@@ -6,11 +6,11 @@ class DishService {
   async getDish(id) {
     return DishModel.findById(id);
   }
-  async createDish(post) {
-    return DishModel.create(post);
+  async createDish(obj) {
+    return DishModel.create(obj);
   }
-  async updateDish(id, post) {
-    return DishModel.findByIdAndUpdate(id, post, { new: true });
+  async updateDish(id, obj) {
+    return DishModel.findByIdAndUpdate(id, obj, { new: true });
   }
   async deleteDish(id) {
     return DishModel.findByIdAndDelete(id);

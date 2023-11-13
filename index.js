@@ -6,6 +6,7 @@ const mongoose = require("mongoose")
 const PORT = process.env.PORT || 5000
 const authRouter = require("./router/auth-router")
 const dishRouter = require("./router/dish-router")
+const categoryRouter = require("./router/category-router")
 const app = express()
 const errorMiddleware = require("./middleware/error-middleware")
 
@@ -17,6 +18,7 @@ app.use(cors({
 }))
 app.use("/api/auth/", authRouter)
 app.use("/api/dish/", dishRouter)
+app.use("/api/category/", categoryRouter)
 app.use(errorMiddleware)
 
 const start = async () => {
