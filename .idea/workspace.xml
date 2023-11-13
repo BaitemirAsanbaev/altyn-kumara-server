@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f71aa0a-78ca-4429-9330-4adbb6992cfc" name="Changes" comment="refactored for dishes">
-      <change afterPath="$PROJECT_DIR$/controller/category-controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/category.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router/category-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/category-service.js" afterDir="false" />
+    <list default="true" id="4f71aa0a-78ca-4429-9330-4adbb6992cfc" name="Changes" comment="added categories">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/dish.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/dish.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/dish-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/dish-service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +100,7 @@
       <workItem from="1699424477776" duration="423000" />
       <workItem from="1699714543502" duration="36000" />
       <workItem from="1699715346887" duration="4205000" />
-      <workItem from="1699890525620" duration="748000" />
+      <workItem from="1699890525620" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="integrated sample jwt auth and dishes CRUD">
       <option name="closed" value="true" />
@@ -142,6 +136,7 @@
     <MESSAGE value="integrated sample jwt auth and dishes CRUD" />
     <MESSAGE value="updated permissions" />
     <MESSAGE value="refactored for dishes" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored for dishes" />
+    <MESSAGE value="added categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="added categories" />
   </component>
 </project>

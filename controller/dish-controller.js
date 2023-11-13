@@ -42,9 +42,9 @@ class DishController {
       if (!errors.isEmpty()) {
         return next(new ApiErrors("validation error", errors.array()));
       }
-      const { title, description, author } = req.body;
+      const { title, description, category } = req.body;
       // const {image} = req.files;
-      await DishService.createDish({ title, description, author });
+      await DishService.createDish({ title, description, category });
       return res.status(200).json({ message: "Dish created successfully" });
     } catch (e) {
       next(e);
@@ -57,10 +57,10 @@ class DishController {
         return next(new ApiErrors("validation error", errors.array()));
       }
       const { id } = req.params;
-      const { title, description, author } = req.body;
+      const { title, description, category } = req.body;
       // const {image} = req.files;
-      console.log(id, { title, description, author, image });
-      await DishService.updateDish(id, { title, description, author });
+      console.log(id, { title, description, category });
+      await DishService.updateDish(id, { title, description, category });
       res.status(200).json({ message: "Dish updated successfully" });
     } catch (e) {
       next(e);
